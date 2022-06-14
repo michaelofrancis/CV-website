@@ -1,0 +1,563 @@
+<!-- https://youtu.be/hnjHCmaUVPg -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="css/CVstyle.css" rel="stylesheet" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" 
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" 
+      crossorigin="anonymous" 
+      referrerpolicy="no-referrer" />
+      <!-- <script src="https://code.jquery.com/jquery-1.10.2.js"></script> -->
+  </head>
+  <body>
+    
+
+     <!-- ************************************************** -->
+<!-- ********************NAVBAR********************* -->
+<!-- ************************************************** -->
+<nav class="navbar">
+  <div class="logo">Mike Francis</div>
+  <a href="#" class="toggle-button">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </a>
+  <div class="navbar-links">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="CV.html">CV</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+<script>const toggleButton = document.getElementsByClassName('toggle-button')[0]
+  const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+  toggleButton.addEventListener('click', () =>{
+      navbarLinks.classList.toggle('active')
+  })</script>
+</nav>
+<!--end of Navigation bar-->
+<!-- ************************************************** -->
+
+
+     <!-- ************************************************** -->
+      <!-- ********************LEFT SIDE********************* -->
+      <!-- ************************************************** -->
+
+
+  <div class="container">
+    <div class="left_Side">
+      <div class="profileText">
+        <div class="imgBx">
+          <img src="images/MF_042022_headshot.jpeg">
+        </div>
+        <h2>Mike Francis, M.S.<br><span>Bioinformatician <br>Data Scientist</span></h2>
+      </div>
+      <!-- ************************************************** -->
+      <!-- ********************CONTACT INFO********************* -->
+      <!-- ************************************************** -->
+      <div class="contactInfo">
+        <h3 class="title">Contact Info</h3>
+        <ul>
+          <li>
+            <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+            <span class="email" onclick="copy(this)">michaelfrancis@uga.edu</span>
+          </li>
+          <li>
+            <a href="http://mikefrancis.surge.sh">
+            <span class="icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
+            <span class="text">mikefrancis.surge.sh</span></a>
+          </li>
+          <li>
+            <a href="https://scholar.google.com/citations?user=Tv4MzpsAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
+              <span class="icon2"><i class="ai ai-google-scholar"></i></span>
+            <span class="text">My Publications</span></a>
+          </li>
+          <li>
+            <a href="http://www.linkedin.com/in/michaelofrancis/" target="_blank" rel="noopener noreferrer">
+              <span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+            <span class="text2">
+              www.linkedin.com/in/michaelofrancis/
+            </span></a>
+          </li>
+          <li style="cursor:default;">
+            <span class="icon" ><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+            <span class="text">Athens, GA, USA</span>
+          </li>
+        </ul>
+      </div>
+      <!-- ************************************************** -->
+      <!-- ********************EDUCATION********************* -->
+      <!-- ************************************************** -->
+      <div class="contactInfo education">
+        <h3 class="title">Education</h3>
+        <ul>
+          <li>
+            <h5>2019-present (in progress)</h5>
+            <h4> Doctor of Philosophy in Bioinformatics</h4>
+            <h4>University of Georgia</h4>
+          </li> 
+          <li>
+            <h5>Graduated July 2019</h5>
+            <h4> Master of Science in Nutrition</h4>
+            <h4>University of Georgia</h4>
+          </li>
+          <li>
+            <h5>Graduated May 2014</h5>
+            <h4> Bachelor of Science in Chemistry</h4>
+            <h4>SUNY College of Environmental Science and Forestry (SUNY-ESF)</h4>
+          </li>
+        </ul>
+      </div>
+
+      <!-- <div class="contactInfo language">
+        <h3 class="title">Expertise</h3>
+        <ul>
+          <li>
+            <span class="text">Nutrition Science</span>
+            <span class="percent">
+              <div style="width: 90%;"></div>
+            </span>
+          </li>
+          <li>
+            <span class="text">Quantitative Genetics</span>
+            <span class="percent">
+              <div style="width: 60%;"></div>
+            </span>
+          </li>
+          <li>
+            <span class="text">Hindi</span>
+            <span class="percent">
+              <div style="width: 40%;"></div>
+            </span>
+          </li>
+
+        </ul>
+      </div> -->
+
+    </div>
+
+
+      <!-- ************************************************** -->
+      <!-- ********************RIGHT SIDE********************* -->
+      <!-- ************************************************** -->
+
+
+    <div class="right_Side">
+
+      <!-- -------TOP PROFILE---------- -->
+      <div class="about">
+        <h2 class="title2">Profile</h2>
+          <p>
+            I am a Ph. D. Candidate in the Institute of Bioinformatics at the University of Georgia. I hope to graduate and receive my Ph. D. December 17th, 2022.
+            My research involves discovering novel genetic loci that influence lipid metabolism.  These loci are identified using state-of-the-art computational methods applied to biobank-scale datasets. The goal is to uncover new biological insights and move closer to gene-based dietary recommendations (AKA "precision nutrition").
+            <br><br>
+            I am also experienced in web development using HTML, CSS and JavaScript.
+            The code for this website can be found here "LINK".  <br><br>
+            
+            I am looking for opportunities to apply the knowledge I have gained during my Ph. D. in the following domains: genetics, biology, nutrition science, computer programming, statistics, and scientific writing. 
+          </p>
+      </div>
+
+
+      <!-- -------EXPERIENCE---------- -->
+      <div class="about">
+          <h2 class="title2">Research Experience</h2>
+
+          <!-- EXPERIENCE DETAIL 1 -->
+          <div class="box">
+            <div class="year_company">
+              <h5>2019 - Present</h5>
+              <h5>Nutritional Genomics Laboratory (UGA)</h5>
+            </div>
+            <div class="text">
+              <h4>Graduate research assistant (DOCTORAL)</h4>
+              <p>Quantitative and functional genomic analyses of genes, 
+                dietary intake, and their interactions in complex human disease phenotypes. 
+                Supervised by Dr. Kaixiong Ye. </p>
+            </div>
+          </div>
+
+          <!-- EXPERIENCE DETAIL 2 -->
+          <div class="box">
+            <div class="year_company">
+              <h5>2017 - 2019</h5>
+              <h5>Micronutrient Proteomic Laboratory (UGA)</h5>
+            </div>
+            <div class="text">
+              <h4>Graduate research assistant (MASTER'S)</h4>
+              <p>Genomic motif analyses and cell culture experiments to determine the 
+                role of zinc-activated transcription factors and related miRNAs in regulation 
+                of human gene expression. 
+                Supervised by Dr. Arthur Grider.</p>
+            </div>
+          </div>
+
+          <!-- EXPERIENCE DETAIL 3 -->
+          <div class="box">
+            <div class="year_company">
+              <h5>2013-2014</h5>
+              <h5>Natural Products Synthesis Laboratory (SUNY-ESF)</h5>
+            </div>
+            <div class="text">
+              <h4>Undergraduate capstone research</h4>
+              <p>Organic chemistry synthesis of insect pheromones, 
+                with analysis using <sup>1</sup>H and <sup>13</sup>C nuclear magnetic resonance, 
+                gas chromatography, and thin layer chromatography. 
+                Supervised by Dr. Francis Webster.</p>
+            </div>
+          </div>
+      
+        </div>
+
+
+<!-- -------PROFESSIONAL SKILLS---------- -->
+
+<!-- <div class="about skills">
+  <h2 class="title2"> Professional Skills</h2>
+  <div class="box">
+    <h4>HTML</h4>
+    <div class="percent">
+      <div style="width: 95%;"></div>
+    </div>
+    </div>
+  <div class="box">
+    <h4>CSS</h4>
+    <div class="percent">
+    <div style="width: 80%;"></div>
+  </div>
+  </div>
+  <div class="box">
+    <h4>Javascript</h4>
+    <div class="percent">
+    <div style="width: 80%;"></div>
+  </div>
+  </div>
+  <div class="box">
+    <h4>Python</h4>
+    <div class="percent">
+    <div style="width: 50%;"></div>
+  </div>
+  </div>
+</div> -->
+
+
+<!-- -------INTERESTS---------- -->
+
+<!-- <div class="about interest">
+  <h2 class="title2"> Interests</h2>
+  <ul>
+    <li><i class="fa fa-hand-rock-o" aria-hidden="true"></i> Fighting</li>
+    <li><i class="fa fa-hand-rock-o" aria-hidden="true"></i> Fighting</li>
+    <li><i class="fa fa-hand-rock-o" aria-hidden="true"></i> Fighting</li>
+    <li><i class="fa fa-hand-rock-o" aria-hidden="true"></i> Fighting</li>
+  </ul>
+</div> -->
+<!-- -------PUBLICATIONS---------- -->
+
+<div class="accordion">
+  <div class="contentBx">
+  <h2 class="label"> Peer-reviewed Publications (6)</h2>
+  <ol class="content">
+    <li><b>Francis M</b>, Li C, Sun Y, Zhou J, Brenna JT, Li X, Ye K. (2021) 
+      Gene-diet genome-wide association study of fish oil supplementation 
+      with continuous lipid traits in 81,246 individuals reveals new i
+      nteraction loci. PLOS Genetics 17(3): e1009431. 
+      doi:10.1371/journal.pgen.1009431.</li><br>
+
+    <li>Zhou J, Liu C, <b>Francis M</b>, Sun Y, Ryu MS, Grider A, Ye K. (2021) 
+      Genetically predicted circulating levels of copper and zinc are 
+      associated with osteoarthritis but not with rheumatoid arthritis. 
+      Osteoarthritis and Cartilage 29(7): 1029-1035. 
+      doi:10.1016/j.joca.2021.02.564.</li><br>
+      <li>Zhou J, Liu C, <b>Francis M</b>, Sun Y, Ryu MS, Grider A, Ye K. (2020) 
+      The Causal Effects of Blood Iron and Copper on Lipid Metabolism Disease: 
+      Evidence from Phenome-wide Mendelian Randomization Study. 
+      Nutrients 12(10): 3174. doi:10.3390/nu12103174</li><br>
+        <li><b>Francis M</b>, Cheng H, Ma P, Grider A. (2019) 
+          Genomic characterization of the zinc transcriptional 
+          regulatory element reveals potential functional roles of ZNF658. 
+          Biological Trace Element Research 192(2):83-90. 
+          doi: 10.1007/s12011-019-1650-9</li><br>
+          <li><b>Francis M</b>, Grider A. (2019) MiRNA-target interactions in 
+            osteogenic signaling pathways involving zinc and the metal regulatory
+            element. 
+            Biometals 32(1):111-121. doi: 10.1007/s10534-018-00162-4</li><br>
+          <li><b>Francis M</b>, Grider A. (2018) Bioinformatic analysis of the 
+            metal response element and zinc-dependent gene regulation via the 
+            metal response element-binding transcription factor 1 in Caco-2 cells.
+             Biometals 31(4): 639-646. 
+            doi:10.1007/s10534-018-0115-5</li><br>
+  </ol>
+</div>
+</div>
+
+
+<!-- -------PUBLICATIONS2---------- -->
+
+<div class="accordion">
+  <div class="contentBx">
+  <h2 class="label"> Manuscripts in review or in preparation (4)</h2>
+  <ol class="content">
+    <li><b>Francis M</b>, Sun Y, Xu H, Brenna JT, Ye K. (2022) Fifty-one novel, replicated loci identified in genome-wide association study of polyunsaturated and monounsaturated fatty acids in 124,024 European individuals. medRxiv pre-print. doi:10.1101/2022.05.27.22275343
+      </li><br>
+
+    <li>Pan Y, Sun X, Mi X, [and 51 others, including <b>Francis M</b>]. Whole-exome sequencing study identifies four novel gene loci associated with diabetic kidney disease. <i>In review</i>.</li><br>
+
+    <li><b>Francis M</b>, McDonald T, Sun Y, Ye K. (2022) Four novel loci of vegetarianism with sex hormone traits found in genome-wide interaction study.<i>In preparation.</i>
+    </li><br>
+
+    <li><b>Francis M</b>, Sun Y, Ye K. (2022) Fourteen novel loci of vegetarianism with continuous lipid traits found in genome-wide interaction study. <i>In preparation.</i>
+    </li><br>
+
+
+
+
+  </ol>
+</div>
+</div>
+
+
+
+
+<!-- -------TEACHING EXPERIENCE---------- -->
+
+<div class="accordion">
+  <div class="contentBx">
+  <h2 class="label"> TEACHING EXPERIENCE</h2>
+  <ul class="content" type="square">
+<li type="none"><b>Research mentor</b>
+  <i><span style="float:right";>2018-present</i></span></li >
+<li type="none"><i>University of Georgia</i>, Athens, GA</li>
+<ul style="padding-left:20px">
+  <li>Mentoring a running total of five undergraduate students 
+    conducting bioinformatics research projects.</li>
+</ul><br>
+
+<li type="none"><b>Graduate Teaching Assistant</b>
+  <i><span style="float:right";>2017-2019</i></span></li >
+<li type="none"><i>University of Georgia</i>, Athens, GA</li>
+<ul style="padding-left:20px">
+  <li>Nutritional Epidemiology with Dr. Alex Anderson. </li>
+  <li>Introduction to Nutrition with Dr. Barbara Grossman. </li>
+  <li>Responsibilities: Grading papers, office hours, periodic lecturing. </li>
+</ul><br>
+
+<li type="none"><b>Instructor of Record</b>
+  <i><span style="float:right";>Fall 2018</i></span></li >
+<li type="none"><i>University of Georgia</i>, Athens, GA</li>
+<ul style="padding-left:20px">
+  <li>GRSC 7770, University Teaching and Professional Development.</li>
+  <li>Led a 2 credit hour class for graduate students, focused 
+    on developing skills for teaching assistants and future faculty.</li>
+</ul><br>
+
+<li type="none"><b>Online Tutor</b>
+  <i><span style="float:right";>2014-2017</i></span></li >
+<li type="none"><i>Chegg Tutors</i>, USA</li>
+<ul style="padding-left:20px">
+  <li>Private tutoring in chemistry, mathematics, 
+    using real-time virtual whiteboards with audio and video chat. </li>
+</ul>
+</ul>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<!-- -------AWARDS---------- -->
+
+<div class="accordion">
+  <div class="contentBx">
+  <h2 class="label"> Awards (10)</h2>
+  <ul class="content">
+    <li><b>NIH Training Grant,</b>, National Institutes of Health, 2021-2022 and 2020-2021.</li>
+    <li><b>Communication of Research and Scholarship Grant,</b> University of Georgia, 2020.</li>
+    <li><b>Capturing Science Contest, 2nd place,</b> University of Georgia Libraries, “The Music of Life,” 2019.</li>
+    <li><b>Research Assistantship,</b> University of Georgia Institute of Bioinformatics, 2019-2020.</li>
+    <li><b>Registration Scholarship,</b> University of Washington Summer Institute in Statistical Genetics, 2019.</li>
+    <li><b>Teaching Assistantship,</b> University of Georgia Department of Foods and Nutrition, 2017-2019.</li>
+    <li><b>Graduate School Teaching Seminar Assistantship,</b> University of Georgia Graduate School, 2018.</li>
+    <li><b>Marian Wang Nutrition Scholarship,</b> University of Georgia College of Family and Consumer Sciences, 2018.</li>
+    <li><b>Virginia Wilbanks Kilgore Scholarship,</b> University of Georgia College of Family and Consumer Sciences, 2017.</li>
+    <li><b>Graduated magna cum laude,</b> SUNY College of Environmental Science and Forestry, 2014.</li>
+    
+</ul>
+</div>
+</div>
+
+<!-- -------MEDIA COVERAGE---------- -->
+
+<div class="accordion">
+  <div class="contentBx">
+  <h2 class="label"> MEDIA COVERAGE</h2>
+  <ul class="contentsmall" type="circle">
+  <li>Gene-diet genome-wide association study of fish oil supplementation 
+    with continuous lipid traits in 81,246 individuals reveals new interaction loci (2021)   <script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script><div class="altmetric-embed" data-badge-type="donut" data-altmetric-id="102706519"></div>
+    <a href="https://plos.altmetric.com/details/102706519"
+    target="_blank" rel="noopener noreferrer">
+    Altmetric Details</a>
+  </li>
+  <br/>
+    <li>
+
+    University of Georgia Libraries (2020, February). 
+    “Libraries’ Capturing Science Contest Encourages 
+    Creativity in Science Communication” <i>Beyond the Pages</i>, 
+    29, pp.14-15.
+    <a href="https://news.uga.edu/uga-libraries-capturing-science-contest/" target="_blank" rel="noopener noreferrer">
+    https://news.uga.edu/uga-libraries-capturing-science-contest/</a>
+
+  </li>
+  </ul>
+</div>
+</div>
+
+
+
+<!-- -------POSTER PRESENTATIONS---------- -->
+
+<div class="accordion">
+  <div class="contentBx">
+  <h2 class="label"> POSTER PRESENTATIONS (6)</h2>
+  <ul class="content">
+    <div class="poster">
+<li>Genome-wide association study of blood lipids with fish oil supplementation in 81,246 UK Biobank participants identifies new interaction loci. October 2020. Poster Session. ASHG Virtual Meeting 2020—American Society of Human Genetics. San Diego, CA, United States. <b>Michael Francis</b>, Changwei Li, Yitang Sun, Jingqi Zhou, J. Thomas Brenna, Kaixiong Ye.</li>
+<li>White Blood Cells and Severe COVID-19: a Mendelian Randomization Study. October 2020. Poster Session. ASHG Virtual Meeting 2020—American Society of Human Genetics. San Diego, CA, United States. Yitang Sun, Jingqi Zhou, <b>Michael Francis</b>, Kaixiong Ye.</li>
+<li>Shared and Unique Clinical Effects of Blood Minerals: A Phenome-wide Mendelian-randomization Study. October 2020. Poster Session. ASHG Virtual Meeting 2020—American Society of Human Genetics. San Diego, CA, United States. Jingqi Zhou, Chang Liu, <b>Michael Francis</b>, Yitang Sun, Kaixiong Ye.</li>
+<li>In silico secondary analysis of the metal regulatory element and MTF-1 within the human genome: relation to zinc-responsive genes. June 2018. Poster Session. Nutrition 2018—American Society for Nutrition. Boston, MA. <b>Michael Francis</b>, Arthur Grider.</li>
+<li>The proximity of the metal regulatory element to microRNA genes within the human genome: in silico analysis. June 2018. Poster Session. Nutrition 2018—American Society for Nutrition. Boston, MA. <b>Michael Francis</b>, Arthur Grider.</li>
+<li>Pheromone Synthesis Using Bromine as a Protecting Group. April 2014. Poster Session. Western New York American Chemical Society Undergraduate Research Symposium. Buffalo, NY. <b>Michael Francis</b>, Francis Webster.</li>
+</div>
+</ul>
+</div>
+</div>
+
+<!-- -------PUBLISHED ABSTRACTS---------- -->
+
+<div class="accordion">
+  <div class="contentBx">
+  <h2 class="label"> PUBLISHED ABSTRACTS (3)</h2>
+  <ul class="content" type="disc">
+<li>Li C, <b>Francis M</b>, Westbrook A, Zhang R, Shen Y, Ye K, Chen J, He J, Kelly TN. Abstract MP08: Whole Exome Sequencing Study Identified A Novel Variant For Kidney Function And Progression Of Chronic Kidney Disease [abstract]. In: Circulation, 2021 May 25.</li>
+<li><b>Francis M</b>, Grider, A. In silico secondary analysis of the metal regulatory element/MTF-1 within the human genome: relation to zinc-responsive genes [abstract]. In: Current Developments in Nutrition; 2018 June 9-12; Boston, MA. ASN; 2018.</li>
+<li><b>Francis M</b>, Grider, A. The proximity of the metal regulatory element to microRNA genes within the human genome: in silico analysis [abstract]. In: Current Developments in Nutrition; 2018 June 9-12; Boston, MA. ASN; 2018.</li>
+
+</ul>
+</div>
+</div>
+
+<!-- -------SERVICE AND LEADERSHIP---------- -->
+
+<div class="accordion">
+  <div class="contentBx">
+  <h2 class="label"> SERVICE AND LEADERSHIP</h2>
+  <ul class="content" type="circle">
+<li>Software Carpentries workshops, Athens, GA</li>
+<ul style="padding-left:20px">
+  <li><b>Instructor and Organizer:</b> “Programming with R,” 02-07-2020</li>
+  <li><b>Instructor:</b> “The Unix Shell,” 12-04-2019</li>
+</ul><br>
+ <li> Clarke County Mentorship Program, Athens, GA						     
+   <i><span style="float:right";>Fall 2018</i></span>
+  </li>
+ <ul style="padding-left:20px">
+ <li ><b>Mentor:</b> for underprivileged middle school students.</li>
+</ul><br>
+<li>Georgia Science & Engineering Fair, Athens, GA						    
+  <i><span style="float:right";>2018, 2019</i></span>
+</li>
+<ul style="padding-left:20px">
+<li><b>Junior Division Category Leader:</b> Judging 6-8th grade science fair entries.</li>
+</ul>
+</ul>
+</div>
+</div>
+
+
+
+<!-- -------CERTIFICATES---------- -->
+
+<div class="accordion">
+  <div class="contentBx">
+  <h2 class="label"> CERTIFICATES</h2>
+  <ul class="contentsmall" type="circle">
+  <li type="none"><b>Carpentries Instructor</b>
+    <i><span style="float:right";>November 2019</i></span></li >
+  <li type="none"><i>The Carpentries</i>, USA</li>
+  </ul>
+</div>
+</div>
+
+
+
+
+
+
+
+<!-- END RIGHT SIDE DIV -->
+</div>
+
+<!-- END CONTAINER DIV -->
+</div> 
+
+
+<!-- ACCORDION BOX SCRIPT -->
+<script>
+  const accordion = document.getElementsByClassName
+  ('contentBx');
+
+  for (i=0; i<accordion.length; i++){
+      accordion[i].addEventListener('click', function(){
+          this.classList.toggle('active')
+      })
+  }
+</script>
+
+<script>
+
+function myFunction() {
+  // /* Get the text field */
+  // var copyText = "copy";
+
+  // /* Select the text field */
+  // copyText.select();
+  // copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+  //  /* Copy the text inside the text field */
+  // navigator.clipboard.writeText(copyText.value);
+
+  /* Alert the copied text */
+  alert("Copied the text: ")
+  // + copyText.value);
+}
+
+function copy(that){
+  var inp =document.createElement('input');
+  document.body.appendChild(inp)
+  inp.value =that.textContent
+  inp.select();
+  document.execCommand('copy',false);
+  inp.remove();
+  // alert("Copied the text: ")
+  that.classList.add("active");
+  setTimeout(function(){
+    that.classList.remove("active");
+  },2000);
+    }
+
+</script>
+
+</body>
+</html>

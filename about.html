@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/styles.css" rel="stylesheet" >
+    <script src="js/app.js"defer></script>
+    <title>Home</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+  <body>
+<!-- ************************************************** -->
+<!-- ********************NAVBAR********************* -->
+<!-- ************************************************** -->
+<nav class="navbar">
+  <div class="logo">Mike Francis</div>
+  <a href="#" class="toggle-button">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </a>
+  <div class="navbar-links">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="CV.html">CV</a></li>
+      <li><a href="test.html">Test</a></li>
+    </ul>
+  </div>
+<script>const toggleButton = document.getElementsByClassName('toggle-button')[0]
+  const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+  toggleButton.addEventListener('click', () =>{
+      navbarLinks.classList.toggle('active')
+  })</script>
+</nav>
+<!--end of Navigation bar-->
+<!-- ************************************************** -->
+  </body>
+</html>

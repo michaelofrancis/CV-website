@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/indexStyle.css" rel="stylesheet" >
+    
+    <title>Home</title>
+
+    <!-- <script src="js/csi.min.js"></script> -->
+
+
+  </head>
+  <body>
+
+    <!-- ************************************************** -->
+<!-- ********************NAVBAR********************* -->
+<!-- ************************************************** -->
+<nav class="navbar">
+  <div class="logo">Mike Francis</div>
+  <a href="#" class="toggle-button">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </a>
+  <div class="navbar-links">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="CV.html">CV</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+<script>const toggleButton = document.getElementsByClassName('toggle-button')[0]
+  const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+  toggleButton.addEventListener('click', () =>{
+      navbarLinks.classList.toggle('active')
+  })</script>
+</nav>
+
+<!--end of Navigation bar-->
+<!-- ************************************************** -->
+
+
+<!-- ************************************************** -->
+<!-- **************RAIN ANIMATION********************** -->
+<!-- ************************************************** -->
+
+<div class="rain">
+<script>
+  function rain (){
+      let amount=100;
+      let body= document.querySelector('body');
+      let i=0;
+      while (i < amount){
+          let drop = document.createElement('i');
+
+          let size= Math.random() * 5;
+          let posX = Math.floor(Math.random() * window.innerWidth);
+          let delay=Math.random() * -20;
+          let duration = Math.random() * 5;
+
+          drop.style.width = 0.2 + size + 'px';
+          drop.style.left = posX + 'px';
+          drop.style.animationDelay = delay + 's';
+          drop.style.animationDuration= 1 + duration + 's';
+
+          body.appendChild(drop);
+          i++;
+      }
+  }
+
+  rain();
+</script>
+</div>
+
+<!-- ************************************************** -->
+
+  <div class="myName" style="font-weight: 700;">
+    MIKE FRANCIS<br>
+    <div style="color:#d6ab3e;font-size: 70%;font-weight: 300;">
+      DATA WARRIOR</style>
+  </div>
+  
+
+
+  </body>
+</html>
