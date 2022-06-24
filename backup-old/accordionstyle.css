@@ -1,0 +1,163 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    min-height:100vh;
+    margin-top: 50px;
+    background:#bedfe8;
+
+}
+
+.accordion{
+    width:800px;
+}
+
+.accordion .contentBx{
+    position:relative;
+    margin:10px 20px;
+}
+
+.accordion .contentBx .label{
+
+    position:relative;
+    padding: 10px;
+    background: #2694af;
+    color:#fff;
+    cursor: pointer;
+}
+
+.accordion .contentBx .label::before{
+    content: '+';
+    position: absolute;
+    top:50%;
+    right:20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+
+}
+
+
+.accordion .contentBx.active .label::before{
+    content: '-';
+
+}
+
+.accordion .contentBx .content{
+    position:relative;
+    background: #fff;
+    height:0;
+    overflow:hidden;
+    transition: 0.5s;
+    overflow-y:auto;
+}
+
+.accordion .contentBx.active .content{
+    height:150px;
+    padding:10px;
+}
+
+
+
+
+/* -------------------------------------------------- */
+/* ------------------NAVBAR-------------------------- */
+/* -------------------------------------------------- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: #333;
+    color: white;
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:999;
+}
+
+.logo{
+    font-size:1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links ul{
+    margin:0;
+    padding:0;
+    display:flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration:none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li:hover{
+    background-color: #555 ;
+
+}
+
+.toggle-button{
+    position:absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width:30px;
+    height:21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width:100%;
+    background-color:white;
+    border-radius: 10px;
+}
+
+
+/* If the size is less than 400 */
+@media (max-width: 400px){
+    .toggle-button{
+        display:flex;
+    }
+
+    .navbar-links{
+        display:none;
+        width:100%;
+    }
+
+    .navbar{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+    .navbar-links ul{
+        flex-direction:column;
+        width:100%;
+    }
+
+    .navbar-links li{
+        text-align:center;
+    }
+
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active{
+        display:flex;
+    }
+
+
+}

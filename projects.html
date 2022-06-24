@@ -23,6 +23,7 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="CV.html">CV</a></li>
+        <li><a href="projects.html">Projects</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
@@ -30,55 +31,215 @@
     const navbarLinks = document.getElementsByClassName('navbar-links')[0]
     toggleButton.addEventListener('click', () =>{
         navbarLinks.classList.toggle('active')
-    })</script>
+    })
+    </script>
   </nav>
   
   <!--end of Navigation bar-->
 
-<br><br>
+  
+<section class="title">
+    <h1>Genome-wide association and interaction studies
+      (GWAS and GWIS)</h1>
+</div>
 
-    <!-- https://www.youtube.com/watch?v=-D6oTPA4vXc -->
-    <!-- 56 minutes start -->
-<section class="section">
 
-    <h1>Dissertation projects</h1>
-    <br/>
-    <br/>
-    <br/>
-    
 <div class="project-container">
 
-    <div class="project-card">
+
+<!-- *******************CARD 1******************* -->
+<div class="project-card">
+    <div class="upper">
         <img class="project-image" src="images/project/Fig2.png" href="https://github.com/michaelofrancis?tab=repositories/">
-        <h3>GWAS of polyunsaturated fatty acids</h3>
-        <p class="subtext"> Description of PUFA-GWAS project goes here. Much excite very wow. </p>
-        <hr/>
-        <p class="subtext"><a class="project-link" href="https://github.com/michaelofrancis?tab=repositories">
-            View here</a></p>
+        <h3>Genome-wide association study of PUFA and MUFA traits</h3>
+        <p class="subtext"> A GWAS of 124,024 Europeans found 51 novel genetic loci associated with heritability of circulating polyunsaturated and monounsaturated fatty acid levels. </p>
     </div>
-
-    <div class="project-card">
-        <img class="project-image" src="images/project/locuszoomFO.PNG" />
-        <h3>Fish oil genome-wide interaction with lipid traits</h3>
-        <p class="subtext"> The fish oil interaction project description goes here. Make them want to click the link. </p>
-        <hr/>
-        <p class="subtext"><a class="project-link" href="https://github.com/michaelofrancis?tab=repositories">
-            View here</a></p>
-    </div>
-
-    <div class="project-card">
-        <img class="project-image" src="images/project/Fig2.png" />
-        <h3>Vegetarianism interaction with human traits</h3>
-        <p class="subtext"> This is my project and some text about it. I enjoyed making this project. </p>
-        <hr/>
-        <p class="subtext"><a class="project-link" href="https://github.com/michaelofrancis?tab=repositories">
-            View here</a></p>
-    </div>
-
     
+    <div class="bottom">
+        <hr>
+        <button id="myBtn1" class="modalbutton" href="#myModal1">Learn More</button>
+    </div>
+    </div>
+
+<!-- *******************MODAL 1******************* -->
+
+<!-- The Modal -->
+<div id="myModal1" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="modal-header">
+        Fifty-one novel, replicated loci identified in genome-wide association study of polyunsaturated and monounsaturated fatty acids in 124,024 European individuals, by Francis <i>et al.</i>(2022)
+      </div>
+
+      <div class="modal-body">
+        <img class="modal-image" src="images/project/Fig2-crop.png">
+
+        
+In this analysis we performed the largest genome-wide association study (GWAS) to-date on circulating polyunsaturated and monounsaturated fatty acid (PUFA and MUFA) levels. In our analysis of 124,024 European study participants, we found 612 significant associations between genetic loci and PUFA or MUFA levels. This includes 51 associations that were significant, replicated in at least one external study cohort, and had never been previously reported (novel). This study can help us understand which genetic variants influence PUFA and MUFA levels, and can help guide future gene-based dietary interventions and recommendations.
+
+
+
+      </div>
+      <div class="modal-footer">
+        <a class="project-link" target="_blank" href="https://doi.org/10.1101/2022.05.27.22275343">
+          View full preprint on medRxiv</a><br>
+     <a class="project-link" target="_blank" href="https://github.com/michaelofrancis/PUFA_GWAS">
+       View code used in this project on Github</a>
+      </div>
+   </div>
+   </div>
+
+   <!-- *******************CARD 2******************* -->
+<div class="project-card">
+    <div class="upper">
+        <img class="project-image" src="images/project/locuszoomFO.PNG" />
+        <h3>Genome-wide interaction study of fish oil on lipid traits</h3>
+        <p class="subtext"> We found evidence of significant interaction between fish oil supplementation and genotype, suggesting fish oil may raise or lower triglycerides based on genetics.</p>
+    </div>
+    
+    <div class="bottom">
+      
+        <hr>
+        <button id="myBtn2" class="modalbutton" href="#myModal2">Learn More</button>
+    </div>
+    </div>
+
+    <!-- *******************MODAL2******************* -->
+
+    <div id="myModal2" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-header">
+          Genome-wide association study of fish oil supplementation on lipid traits in 81,246 individuals reveals new gene-diet interaction loci, by Francis <i>et al.</i>(2021)
+        </div>
+  
+        <div class="modal-body">
+          <img class="modal-image" src="images/project/locuszoomFO.PNG">
+  The results of this genome-wide interaction study (GWIS) revealed one significant interaction locus at rs112803755 which modified the effects of fish oil supplementation on triglyceride levels in a cross-sectional cohort study of 81,246 Europeans. The minor allele at this SNP is significantly associated with decreased TAGs in individuals with fish oil supplementation, but with increased TAGs in those without supplementation. Our findings highlight the usefulness of personalized nutrition based on individual genetic makeup.
+  
+        </div>
+        <div class="modal-footer">
+          <a class="project-link" target="_blank" href="https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1009431">
+            View full manuscript on PLOS GENETICS</a><br>
+       <a class="project-link" target="_blank" href="https://github.com/michaelofrancis/FishOil-Lipid-Interaction">
+         View code used in this project on Github</a>
+        </div>
+     </div>
+     </div>
+
+ <!-- *******************CARD 3******************* -->
+ <div class="project-card">
+    <div class="upper">
+      <img class="project-image" src="images/project/TAGs-Veg2-M2.png" />
+  <h3>Vegetarianism interaction projects (two in progress)</h3>
+  <p class="subtext"> We are currently performing two genome-wide interaction studies to identify SNPs involved in gene-diet interactions of vegetarianism on both lipid traits, and sex hormone traits.</p>
+    </div>
+    
+    <div class="bottom">
+        <hr>
+        <button id="myBtn3" class="modalbutton" href="#myModal3">Learn More</button>
+    </div>
+    </div>
+
+<!-- *******************MODAL 3******************* -->
+
+<div id="myModal3" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="modal-header">
+      Vegetarian interaction projects by Francis <i>et al.</i>(in preparation; 2022)
+    </div>
+
+    <div class="modal-body">
+      <img class="modal-image" src="images/project/TAGs-Veg2-M2.png">
+We are performing two genome-wide interaction studies (GWIS) to identify genetic variants that interact with a vegetarian diet to produce different effects on health outcomes. These projects are querying interaction effects on circulating lipid traits (LDL, HDL, total cholesterol, triglycerides), and sex hormone traits (testosterone, SHBG). Both of these manuscripts are projected to be completed by November 2022.
+
+
+
+    </div>
+    <div class="modal-footer">
+
+      <a class="project-link" target="_blank" href="https://github.com/michaelofrancis/LipidsxVeg">
+        View code used in lipids interaction project on Github</a><br>
+   <a class="project-link" target="_blank" href="https://github.com/michaelofrancis/TestosteronexVeg">
+     View code used in testosterone interaction project on Github</a>
+    </div>
+ </div>
+ </div>
+
+
+
+
+
 </div>
+
+
 </section>
 
 
-</body>
+
+
+
+
+
+
+
+
+
+<!-- *******************MODAL SCRIPT************* -->
+   <script>
+
+    // Get the modal
+    var modals = document.querySelectorAll('.modal');
+    
+    // Get the button that opens the modal
+    var btn = document.querySelectorAll("button.modalbutton");
+    
+    // Get the <span> element that closes the modal
+    var spans = document.getElementsByClassName("close");
+    
+    // When the user clicks on the button, open the modal
+    
+    for (var i = 0; i < btn.length; i++) {
+     btn[i].onclick = function(e) {
+        e.preventDefault();
+        modal = document.querySelector(e.target.getAttribute("href"));
+        modal.style.display = "block";
+     }
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+      for (var i = 0; i < spans.length; i++) {
+     spans[i].onclick = function() {
+        for (var index in modals) {
+          if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+        }
+     }
+    }
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target.classList.contains('modal')) {
+         for (var index in modals) {
+          if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+         }
+        }
+    }
+    
+window.ontouchend= function(event) {
+        if (event.target.classList.contains('modal')) {
+         for (var index in modals) {
+          if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+         }
+        }
+    }
+
+
+    </script>
+    
+    
+
+ </body>
 </html>

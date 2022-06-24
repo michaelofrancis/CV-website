@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/accordionstyle.css" rel="stylesheet" >
+    <script src="js/app.js"defer></script>
+    <title>Home</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+  <body>
+
+        <!-- ************************************************** -->
+<!-- ********************NAVBAR********************* -->
+<!-- ************************************************** -->
+<nav class="navbar">
+    <div class="logo">Mike Francis</div>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="CV.html">CV</a></li>
+        <li><a href="test.html">Test</a></li>
+      </ul>
+    </div>
+  <script>const toggleButton = document.getElementsByClassName('toggle-button')[0]
+    const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+    toggleButton.addEventListener('click', () =>{
+        navbarLinks.classList.toggle('active')
+    })</script>
+  </nav>
+<!--end of Navigation bar-->
+<!-- ************************************************** -->
+
+
+<div class="accordion">
+    <div class="contentBx">
+        <div class="label">List one</div>
+        <div class="content">
+            <p>
+                There are many variations of passages of Lorem Ipsum 
+                available, but the majority have suffered alteration 
+                in some form, by injected humour, or randomised words 
+                which don't look even slightly believable. 
+                If you are going to use a passage of Lorem Ipsum. 
+                 </p>
+        </div>
+    </div>
+    <div class="contentBx">
+        <div class="label">List Two</div>
+        <div class="content">
+            <p>
+                There are many variations of passages of Lorem Ipsum 
+                available, but the majority have suffered alteration 
+                in some form, by injected humour, or randomised words 
+                which don't look even slightly believable. 
+                If you are going to use a passage of Lorem Ipsum. 
+                 </p>
+        </div>
+    </div>
+    <div class="contentBx">
+        <div class="label">List Three</div>
+        <div class="content">
+            <p>
+                There are many variations of passages of Lorem Ipsum 
+                available, but the majority have suffered alteration 
+                in some form, by injected humour, or randomised words 
+                which don't look even slightly believable. 
+                If you are going to use a passage of Lorem Ipsum. 
+                 </p>
+        </div>
+    </div>
+    <div class="contentBx">
+        <div class="label">List Four</div>
+        <div class="content">
+            <p>
+                There are many variations of passages of Lorem Ipsum 
+                available, but the majority have suffered alteration 
+                in some form, by injected humour, or randomised words 
+                which don't look even slightly believable. 
+                If you are going to use a passage of Lorem Ipsum. 
+                 </p>
+        </div>
+    </div>
+</div>
+
+<script>
+    const accordion = document.getElementsByClassName
+    ('contentBx');
+
+    for (i=0; i<accordion.length; i++){
+        accordion[i].addEventListener('click', function(){
+            this.classList.toggle('active')
+        })
+    }
+
+
+</script>
+
+
+</body>
+</html>

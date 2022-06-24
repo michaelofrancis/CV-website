@@ -12,8 +12,6 @@
 
 
 * {
-      box-sizing:border-box;
-    font-family: 'Poppins', sans-serif;
     margin:0;
     padding:0;
     box-sizing:border-box;
@@ -121,11 +119,20 @@ body{
     cursor: pointer;
 }
 
+.contactInfo ul li:link{
+    position:relative;
+    list-style:none;
+    margin: 10px 0;
+    cursor: pointer;
+    color:green;
+}
+
 .contactInfo ul li .icon{
     display: inline-block;
     width: 30px;
     font-size: 18px;
     color: var(--col4);
+    text-decoration: none;
 }
 
 .contactInfo ul li .icon2{
@@ -133,21 +140,38 @@ body{
     width: 30px;
     font-size: 24px;
     color: var(--col4);
-}
-
-
-
-.contactInfo ul li .text2{
-    color:var(--col2);
-    font-weight: 300;
-    font-size:70%;
     text-decoration: none;
 }
+
+.contactInfo ul li .text:link{
+    color:var(--col2);
+    font-weight: 600;
+    text-decoration: none;
+    }
+
+.contactInfo ul li .text:visited{
+      color:var(--col2);
+      font-weight: 600;
+       text-decoration: none;
+        }
+
+.contactInfo ul li .text:hover{
+    color:var(--col2);
+    font-weight: 600;
+    text-decoration: none;
+    }
+
 
 .contactInfo ul li span{
 color:var(--col2);
 font-weight: 300;
 text-decoration: none;
+
+}
+
+.contactInfo ul li span 
+a:visited, a:link, a:active{
+    text-decoration: none;
 }
 
 
@@ -155,7 +179,6 @@ text-decoration: none;
     color:var(--col2);
     font-weight: 600;
     text-decoration: none;
-    
     }
 /* ------------------ */
 /* #EMAIL COPY BOX */
@@ -164,6 +187,10 @@ text-decoration: none;
     /* content:"Copied"; */
     color:green;
     
+}
+
+.contactInfo ul li .email:hover{
+    font-weight: 500;
 }
 
 .contactInfo ul li .email:before {
@@ -177,6 +204,8 @@ text-decoration: none;
     font-size:15px;
     display:none;
   }
+
+  
   .contactInfo ul li .email:after {
     content:"";
     position:absolute;
@@ -463,7 +492,7 @@ min-width:150px;
     display: flex;
     justify-content: space-between;
     align-items:center;
-    background-color: #333;
+    background-color: #3f3e3e;
     color: white;
     position:fixed;
     width:100%;
@@ -473,7 +502,7 @@ min-width:150px;
 
 .logo{
     font-size:1.5rem;
-    margin: .5rem;
+    margin: .8rem;
 }
 
 .navbar-links ul{

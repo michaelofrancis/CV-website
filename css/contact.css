@@ -30,19 +30,23 @@
 }
 
 .contact .content{
-    max-width: 800px;
+    max-width: 80%;
     text-align:center;
 }
 
 .contact .content h2{
-    font-size:36px;
+    font-size:45px;
     font-weight:500;
-    color:var(--col1);
+    color:var(--col2);
+    margin-top:30px;
+    margin-bottom: 15px;
 }
 
 .contact .content p{
     font-weight:300;
+    font-size: 24px;
     color:var(--col1);
+    margin-bottom:20px;
 }
 
 .container{
@@ -54,7 +58,7 @@
 }
 
 .container .contactInfo{
-    width:50%;
+    width:45%;
     display:flex;
     flex-direction:column;
 }
@@ -63,6 +67,7 @@
     position:relative;
     padding: 20px 0;
     display:flex;
+    margin:25px;
 
 }
 
@@ -80,7 +85,7 @@
 .container .contactInfo .box .text{
     display:flex;
     margin-left:20px;
-    font-size:16px;
+    font-size:22px;
     color:var(--col1);
     flex-direction: column;
     font-weight:300;
@@ -193,7 +198,7 @@
     display: flex;
     justify-content: space-between;
     align-items:center;
-    background-color: #333;
+    background-color: #3f3e3e;
     color: white;
     position:fixed;
     width:100%;
@@ -203,7 +208,7 @@
 
 .logo{
     font-size:1.5rem;
-    margin: .5rem;
+    margin: .8rem;
 }
 
 .navbar-links ul{
