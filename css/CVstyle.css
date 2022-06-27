@@ -5,7 +5,7 @@
     --col2:rgb(235, 235, 235);
     --col3:#c19a36; /*d6ab3e;*/
     --col4:#684e0d;
-    --col5:#4b535b; /*Graduate research assistance, etc.*/
+    --col5:#182c40; /*Graduate research assistance, etc.*/
 
 
 }
@@ -503,6 +503,11 @@ min-width:150px;
 .logo{
     font-size:1.5rem;
     margin: .8rem;
+}
+
+.logo a{
+    text-decoration: none;
+    color:white;
 }
 
 .navbar-links ul{

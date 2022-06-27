@@ -242,6 +242,11 @@ width: 95%;
     margin: .8rem;
 }
 
+.logo a{
+    text-decoration: none;
+    color:white;
+}
+
 .navbar-links ul{
     margin:0;
     padding:0;
