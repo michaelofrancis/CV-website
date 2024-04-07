@@ -1,15 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root{
-    --col1:#182c40;
-    --col2:rgb(235, 235, 235);
-    --col3:#c19a36; /*d6ab3e;*/
-    --col4:#684e0d;
-    --col5:#182c40; /*Graduate research assistance, etc.*/
-
-
+    --col1:#BADED6; /*back background + accordion background*/
+    --col2: #341D15; /*Upper/left text*/
+    --col3: #A2DED0; /*upper/left background color*/
+    --col4: #1B3133; /*headers in education only?*/
+    --col5: var(--col2); /*Graduate research assistance, etc.*/
+    --col6: #8EC3B6; /*Bottom/right background color*/
+    --col7: #15342D; /*Icons*/
+    --col8: black; /*Bottom/Right text*/
+    --col9: black ;/*accordion titles*/
+    --col10:#506D66 ; /*Bottom/Right dates and experience headers */
+    --col11: black ;/*hover button*/
+    --col12: black /*summary header*/
 }
 
+body.dark-theme{
+    --col1: #404040; /*back background + accordion background*/
+    --col2: white; /*Upper/left text*/
+    --col3: #1B1B1B; /*upper/left background color*/
+    --col4: white; /*headers in education only?*/
+    --col5: var(--col2); /*Graduate research assistance, etc.*/
+    --col6: #141414; /*Bottom/right background color*/
+    --col7: white; /*Icons*/
+    --col8: white; /*Bottom/Right text*/
+    --col9: black ;/*accordion titles*/
+    --col10: #898989 ; /*Bottom/Right dates and experience headers*/
+    --col11: white ;/*hover button*/
+    --col12: white /*summary header*/
+    }
 
 * {
     margin:0;
@@ -44,6 +63,23 @@ body{
 /* -------------------------------------------------- */
 
 
+
+/* dark/light button*/
+.change-theme{
+    position:absolute; 
+    padding-right: 20px;
+    right: 0;
+    top: 2.2rem;
+    display: flex;
+    color: var(--col11);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.change-theme:hover{
+    color: #DEDBA2;
+}
+
 .container .left_Side {
     position:relative;
     background:var(--col3);
@@ -65,7 +101,7 @@ body{
     height:200px;
     border-radius: 50%;
     overflow:hidden;
-    border:2px solid white;
+    border:2.2px solid var(--col11);
 }
 
 .profileText .imgBx img{
@@ -79,7 +115,7 @@ body{
 
 .profileText h2{
     color:var(--col2);
-    font-size:1.5em;
+    font-size:2em;
     margin-top:20px;
     text-transform: uppercase;
     text-align:center;
@@ -89,7 +125,7 @@ body{
 
 .profileText h2 span{
     font-size:0.8em;
-    font-weight:300;
+    font-weight:400;
 }
 
 .title{
@@ -97,7 +133,7 @@ body{
     text-transform:uppercase;
     font-weight:600;
     letter-spacing: 1px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 /* ------------------ */
 /* ---Contact info--- */
@@ -124,14 +160,14 @@ body{
     list-style:none;
     margin: 10px 0;
     cursor: pointer;
-    color:green;
+    color:red;
 }
 
 .contactInfo ul li .icon{
     display: inline-block;
     width: 30px;
     font-size: 18px;
-    color: var(--col4);
+    color: var(--col7);
     text-decoration: none;
 }
 
@@ -139,7 +175,7 @@ body{
     display: inline-block;
     width: 30px;
     font-size: 24px;
-    color: var(--col4);
+    color: var(--col7);
     text-decoration: none;
 }
 
@@ -152,19 +188,19 @@ body{
 .contactInfo ul li .text:visited{
       color:var(--col2);
       font-weight: 600;
-       text-decoration: none;
+      text-decoration: none;
         }
 
 .contactInfo ul li .text:hover{
     color:var(--col2);
-    font-weight: 600;
+    font-weight: 700;
     text-decoration: none;
     }
 
 
 .contactInfo ul li span{
 color:var(--col2);
-font-weight: 300;
+font-weight: 500;
 text-decoration: none;
 
 }
@@ -185,12 +221,13 @@ a:visited, a:link, a:active{
 /* ------------------ */
 .contactInfo ul li .email:active{
     /* content:"Copied"; */
-    color:green;
+    color:var(--col5);
     
 }
 
 .contactInfo ul li .email:hover{
-    font-weight: 500;
+    font-weight: 700;
+    text-decoration: none;
 }
 
 .contactInfo ul li .email:before {
@@ -198,7 +235,7 @@ a:visited, a:link, a:active{
     position:absolute;
     top:-45px;
     right:0px;
-    background:var(--col4);
+    background:var(--col1);
     padding:8px 10px;
     border-radius:20px;
     font-size:15px;
@@ -213,7 +250,7 @@ a:visited, a:link, a:active{
     right:25px;
     width:10px;
     height:10px;
-    background:var(--col4);
+    background:var(--col1);
     transform:rotate(45deg);
     display:none;
   }
@@ -240,13 +277,13 @@ a:visited, a:link, a:active{
 }
 
 .contactInfo.education h4:nth-child(2) {
-    color: var(--col2);
+    color: var(--col8);
     font-weight: 500;
 }
 
 
 .contactInfo.education h4{
-    color:var(--col2);
+    color: var(--col8);
     font-weight: 300;
 }
 
@@ -278,7 +315,7 @@ a:visited, a:link, a:active{
 
 .container .right_Side {
     position:relative;
-    background: var(--col2);
+    background: var(--col6);
     padding:40px;
 }
 
@@ -293,14 +330,14 @@ a:visited, a:link, a:active{
 
 /* TOP PROFILE*/
 .title2{
-    color:var(--col3);
+    color: var(--col12);
     text-transform:uppercase;
     letter-spacing: 1px;
     margin-bottom: 10px;
 }
 
 p{
-    color: #333;
+    color: var(--col8);
 }
 
 /* EXPERIENCE */
@@ -317,16 +354,23 @@ min-width:150px;
 
 .about .box .year_company h5{
     text-transform: uppercase;
-    color:#848c90;
+    color:var(--col10);
     font-weight:600;
 }
 
 .about .box .text h4{
     text-transform:uppercase;
-    color: var(--col5);
+    color: var(--col10);
     font-size:16px;
 }
+.about .text *{
+    color:var(--col8);
+}
 
+
+.about .text ul{
+    padding-left: 18px
+}
 
 /* PROFESSIONAL SKILLS */
 
@@ -389,15 +433,16 @@ min-width:150px;
 .accordion .contentBx{
     position:relative;
     margin:10px 0px;
+    color: var(--col8);
 }
 
 .accordion .contentBx .label{
     position:relative;
     padding: 10px;
     padding-right:60px;
-    background: #f1f1f1;
+    background: var(--col1);
     cursor: pointer;
-    color:var(--col3);
+    color:var(--col2);
     text-transform:uppercase;
     letter-spacing: 1px;
     margin-bottom: 10px;
@@ -420,7 +465,7 @@ min-width:150px;
 
 .accordion .contentBx .content{
     position:relative;
-    background: var(--col2);
+    background: var(--col1);
     height:0;
     overflow:hidden;
     transition: 0.5s;
@@ -429,7 +474,8 @@ min-width:150px;
 
 .accordion .contentBx.active .content{
     height:300px;
-    padding:20px;
+    padding:15px;
+    padding-left:30px;
 }
 
 .accordion .contentBx .content .poster{
@@ -438,7 +484,7 @@ min-width:150px;
 
 .accordion .contentBx .contentsmall{
     position:relative;
-    background: var(--col2);
+    background: var(--col1);
     height:0;
     overflow:hidden;
     transition: 0.5s;
@@ -447,7 +493,8 @@ min-width:150px;
 
 .accordion .contentBx.active .contentsmall{
     height:150px;
-    padding:20px;
+    padding:15px;
+    padding-left:30px;
 }
 
 

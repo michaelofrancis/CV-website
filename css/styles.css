@@ -75,6 +75,9 @@ body .h1{
 }
 
 
+
+
+
 /* If the size is less than 400 */
 @media (max-width: 400px){
     .toggle-button{
