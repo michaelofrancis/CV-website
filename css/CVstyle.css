@@ -12,7 +12,8 @@
     --col9: black ;/*accordion titles*/
     --col10:#506D66 ; /*Bottom/Right dates and experience headers */
     --col11: black ;/*hover button*/
-    --col12: black /*summary header*/
+    --col12: black; /*summary header*/
+    --col13: #B8A2DE/*cv download button*/
 }
 
 body.dark-theme{
@@ -27,7 +28,8 @@ body.dark-theme{
     --col9: black ;/*accordion titles*/
     --col10: #898989 ; /*Bottom/Right dates and experience headers*/
     --col11: white ;/*hover button*/
-    --col12: white /*summary header*/
+    --col12: white ; /*summary header*/
+    --col13: #3E374C /*cv download button*/
     }
 
 * {
@@ -135,6 +137,34 @@ body{
     letter-spacing: 1px;
     margin-bottom: 0px;
 }
+
+/* ------------------ */
+/* ---CV download button--- */
+/* ------------------ */
+
+.btn-download {
+    display: inline-block;
+    padding: 1px 20px;
+    background-color: var(--col13); /* Primary button color */
+    color: white; /* Text color */
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Removes underline from links */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover effects */
+    border: none; /* No border */
+    cursor: pointer; /* Changes cursor to pointer type on hover */
+}
+
+.btn-download:hover, .btn-download:focus {
+    background-color: #8778A4; /* Darker shade on hover/focus */
+    transform: translateY(-2px); /* Slightly raise the button on hover/focus */
+    color: #ffffff;
+    text-decoration: none; /* Ensures the text decoration doesn't reappear on hover/focus */
+}
+
+
 /* ------------------ */
 /* ---Contact info--- */
 /* ------------------ */
