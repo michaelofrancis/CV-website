@@ -39,7 +39,7 @@ body.dark-theme{
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+html, body{
     background:var(--col1);
     display:flex;
     justify-content: center;
@@ -59,6 +59,8 @@ body{
     grid-template-columns: 1fr 2fr;
     box-shadow: 0 35px 55px rgba(0,0,0,0.1);
 }
+
+
 
 /* -------------------------------------------------- */
 /* ------------------LEFT SIDE----------------------- */
@@ -105,6 +107,8 @@ body{
     overflow:hidden;
     border:2.2px solid var(--col11);
 }
+
+
 
 .profileText .imgBx img{
     position: absolute; 
@@ -533,7 +537,7 @@ min-width:150px;
 
 @media (max-width:1000px){
     .container{
-        margin:10px;
+        /*margin:10px;*/
         margin-top: 80px;
         grid-template-columns: repeat(1,1fr);
     }
@@ -542,23 +546,90 @@ min-width:150px;
     }
 }
 
-@media (max-width:600px){
-    .about .box{
-        flex-direction:column;
-    }
-    .about .box .year_company{
-        min-width:150px;
-        margin-bottom:5px;
-    }
-    .interest ul{
-        grid-template-columns:repeat(1,1fr);
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr; /* Stack the columns on smaller screens */
+        margin-right: 0px ;
+        padding-left: 0px
     }
 
-    .skills .box{
-        grid-template-columns: repeat(1,1fr);
+    .profileText .imgBx {
+        width: 180px; /* Smaller on mobile */
+        height: 180px;
     }
 
+    body {
+        font-size: 14px; /* Adjust base font size */
+    }
+
+    .profileText h2 {
+        font-size: 1.5em; /* Adjust heading sizes */
+        white-space: nowrap; /* Prevents text from wrapping to a new line */
+        overflow: hidden; /* Ensures overflow text is not visible */
+        text-overflow: ellipsis; /* Adds an ellipsis to indicate text overflow */
+    }
+
+    .about .box {
+        flex-direction: column;
+    }
+
+    .about .box .year_company {
+        min-width: 150px;
+        margin-bottom: 5px;
+    }
+
+    .interest ul {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .skills .box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    @media (max-width: 600px) {
+        
+        .navbar {
+            margin: 0;
+            padding: 0 0px; /* Adjust the padding here as needed */
+            width: 100%; /* This ensures it spans the full width */
+        }
+
+    
+        .navbar .logo, .navbar-links ul {
+            /* Adjust the font size for smaller screens */
+            font-size: 18px;
+            padding-left: 30px;
+        }
+    
+        .navbar-links li a {
+            /* Reduce padding around navbar items to save space */
+            padding: 0.5rem;
+        }
+    
+        .toggle-button {
+            /* Ensure the toggle button is visible */
+            display: flex;
+        }
+    
+        .navbar-links {
+            /* Initially hide the navbar links on mobile */
+            display: none;
+            width: 100%;
+        }
+    
+        .navbar-links.active {
+            /* When active, display the links as a block */
+            display: block;
+        }
+    
+        .navbar-links ul {
+            /* Stack the navbar items vertically */
+            flex-direction: column;
+        }
+    }
+    
 }
+
 
 
 
